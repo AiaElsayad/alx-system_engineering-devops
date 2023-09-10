@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -xamp
+printf '%s,' $(ls -1pAF | LC_COLLATE=C sort); echo
